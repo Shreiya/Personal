@@ -1,0 +1,72 @@
+.jumbotron{
+  padding: 150px;
+  margin-bottom: 0px;
+  text-align: center;
+  height: 100vh;
+  background-color: white;
+  background-attachment: fixed;
+  animation-name: fadein;
+}
+
+.parallax-content{
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background: url('http://i.giphy.com/pWFLaCfheBL3O.gif');
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.parallax:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 120% auto;
+}
+
+@media(min-width: 769px){
+  .parallax-content{
+    background-image: url('http://i.giphy.com/pWFLaCfheBL3O.gif');
+  }
+  .parallax-content-2{
+    background-image: url('http://i.giphy.com/pWFLaCfheBL3O.gif');
+  }
+}
+
+@media(max-width: 768px){
+  .parallax-content .parallax:before{
+    background-image: url('http://i.giphy.com/pWFLaCfheBL3O.gif');
+  }
+  .parallax-content-2 .parallax:before{
+    background-image: url('http://i.giphy.com/pWFLaCfheBL3O.gif');
+  }
+}
+
+/*@keyframes fadein {
+    0%   { opacity: 0; }
+    10%  { opacity: .3; }
+    100% { opacity: .5; }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}*/
