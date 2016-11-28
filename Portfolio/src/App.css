@@ -1,12 +1,29 @@
 .jumbotron{
-  padding: 150px;
+  /*padding: 150px;
   margin-bottom: 0px;
   text-align: center;
   height: 100vh;
   background-color: white;
   background-attachment: fixed;
   animation-name: fadein;
+  background-size: cover;*/
+  font-family: "Open Sans";
+box-sizing: border-box;
+align-items: center;
+/*color: #fff;*/
+height: 100vh;
+width: 100vw;
+background-color: black;
+
 }
+
+
+/*html, body {
+width: 100vw;
+height: 100vh;
+margin: 0;
+padding: 0;
+}*/
 
 .parallax-content{
   position: relative;
@@ -40,6 +57,12 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 120% auto;
+}
+
+.jumbotronNew {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/75/27/a0/7527a0b6a50f997190e1c210240e0417.jpg");
+  height: 100vh;
+  width: 100vw;
 }
 
 @media(min-width: 769px){

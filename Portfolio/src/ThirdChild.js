@@ -7,10 +7,10 @@ class ThirdChild extends Component {
 
   render(){
     return(
-      <div className="jumbotron">
+      <div className="jumbotronNew">
 
           This is Child 3.
-      
+
       </div>
     )
   }
