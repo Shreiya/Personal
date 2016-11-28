@@ -2,19 +2,16 @@ import React, { Component } from 'react';
 import './App.css';
 
 
-
 class SecondChild extends Component{
 
   render(){
     return(
+      <section className="module content">
+<div className="container">
+  <p>HI</p>
 
-
-        <div className="parallax-content">
-
-            This is the Second Child.
-
-      
-      </div>
+</div>
+</section>
     )
   }
 }

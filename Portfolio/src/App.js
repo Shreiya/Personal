@@ -3,21 +3,23 @@ import FirstChild from './FirstChild';
 import SecondChild from './SecondChild';
 import ThirdChild from './ThirdChild';
 import FourthChild from './FourthChild';
-
+import FifthChild from './FifthChild';
+import SixthChild from './SixthChild';
+import ZeroChild from './ZeroChild';
 import './App.css';
 
 
 class App extends Component {
-  render () {
+  render() {
     return (
       <div>
-
-        <FirstChild FirstChild={this.props.FirstChild} />
-                <SecondChild SecondChild={this.props.SecondChild} />
-
-        <ThirdChild ThirdChild={this.props.ThirdChild} />
-
-        <FourthChild FourthChild={this.props.FourthChild} />
+        <ZeroChild />
+        <FirstChild />
+          <SecondChild />
+            <ThirdChild />
+              <FourthChild />
+            <FifthChild />
+          <SixthChild />
       </div>
       );
     }

@@ -9,7 +9,6 @@
     "query-string": "^4.2.3",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
-    "react-html5video": "^1.2.12",
     "react-iframe": "0.0.4"
   },
   "scripts": {

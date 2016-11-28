@@ -1,21 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
 
+class SixthChild extends Component {
 
-class FourthChild extends Component {
-
-
-  render(){
+  render() {
     return(
       <section className="module content">
   <div className="container">
-    <h2>Fourth Child</h2>
-    <p>I am the fourth Child</p>
+    <h2>Sixth Child</h2>
+    <p>I am the sixth Child</p>
   </div>
 </section>
-
     )
   }
 }
 
-export default FourthChild;
+export default SixthChild;

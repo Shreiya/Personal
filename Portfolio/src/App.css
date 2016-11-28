@@ -1,95 +1,79 @@
-.jumbotron{
-  /*padding: 150px;
-  margin-bottom: 0px;
-  text-align: center;
-  height: 100vh;
-  background-color: white;
-  background-attachment: fixed;
-  animation-name: fadein;
-  background-size: cover;*/
-  font-family: "Open Sans";
-box-sizing: border-box;
-align-items: center;
-/*color: #fff;*/
-height: 100vh;
-width: 100vw;
-background-color: black;
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* ============================================================
+  SECTIONS
+============================================================ */
 
+.vid {
+  height: 100px;
 }
 
-
-/*html, body {
-width: 100vw;
-height: 100vh;
-margin: 0;
-padding: 0;
-}*/
-
-.parallax-content{
-  position: relative;
-  overflow: hidden;
-  height: 100vh;
-  background: #000;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+section.module:last-child {
+  margin-bottom: 0;
 }
-
-.parallax {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
 }
-
-.parallax:before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  z-index: -1;
-  background-position: center top;
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: 120% auto;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+section.module.parallax-1 {
+  background-image: url("http://i.cdn.turner.com/v5cache/TCM/Images/Dynamic/i385/Casablanca1942_610_678x380_01252016035421.jpg");
+}
+section.module.parallax-2 {
+  background-image: url("https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2012/11/27/1354056542498/Casablanca-010.jpg?w=470&q=55&auto=format&usm=12&fit=max&s=64455bfef842519b248686c47ead622e");
+}
+section.module.parallax-3 {
+  background-image: url("https://image.tmdb.org/t/p/w1280/5tE7iKSpBrc4z6LqF5kHutMm6KQ.jpg");
+}
+section.module.parallax-4 {
+  background-size: cover;
 }
 
-.jumbotronNew {
-  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/75/27/a0/7527a0b6a50f997190e1c210240e0417.jpg");
-  height: 100vh;
-  width: 100vw;
-}
-
-@media(min-width: 769px){
-  .parallax-content{
-    background-image: url('http://cdn.business2community.com/wp-content/uploads/2016/07/icecream.jpg');
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
   }
-  .parallax-content-2{
-    background-image: url('http://cdn.business2community.com/wp-content/uploads/2016/07/icecream.jpg');
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
   }
 }
-
-@media(max-width: 768px){
-  .parallax-content .parallax:before{
-    background-image: url('http://cdn.business2community.com/wp-content/uploads/2016/07/icecream.jpg');
-  }
-  .parallax-content-2 .parallax:before{
-    background-image: url('http://cdn.business2community.com/wp-content/uploads/2016/07/icecream.jpg');
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
   }
 }
-
-/*@keyframes fadein {
-    0%   { opacity: 0; }
-    10%  { opacity: .3; }
-    100% { opacity: .5; }
-}
-
-.fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-}*/
